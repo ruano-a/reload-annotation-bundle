@@ -20,14 +20,14 @@ if (in_array($env, ['dev', 'test'])) {
 
 Add the extension in your xml config (phpunit.xml)
 
-    ```xml
+```xml
     <phpunit>
         ...
         <extensions>
             <extension class="ruano_a\ReloadAnnotationBundle\PHPUnit\PHPUnitExtension" />
         </extensions>
     </phpunit>
-    ```
+```
 And that's it.
 
 # Available annotations 
