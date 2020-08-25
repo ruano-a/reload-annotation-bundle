@@ -1,0 +1,18 @@
+{
+    "name": "ruano_a/reload-annotation-bundle",
+    "description": "A Symfony bundle providing a PHPUnit extension reloading the database if an annotation is present on test methods.",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ruano-a",
+            "email": "aurelien.ruano@epitech.eu"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ruano_a\\ReloadAnnotationBundle\\": ""
+        }
+    }
+}
