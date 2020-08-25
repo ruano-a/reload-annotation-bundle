@@ -4,7 +4,7 @@ It only works with a PHPUnit which version is >= 7.5 .
 # Configuration
 
 ~~~~
-composer require ruano_a/reload-annotation-bundle
+composer require --dev ruano_a/reload-annotation-bundle
 ~~~~
 
 Add the bundle in bundles.php:
