@@ -2,7 +2,7 @@
 
 namespace ruano_a\ReloadAnnotationBundle\Database;
 
-class DatabaseRefresh
+class DatabaseRefresher
 {
     public static function refresh(): void
     {

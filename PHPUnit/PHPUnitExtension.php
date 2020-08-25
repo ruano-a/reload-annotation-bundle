@@ -26,7 +26,7 @@ class PHPUnitExtension implements BeforeTestHook, AfterTestHook
      */
     public function executeBeforeTest(string $test): void
     {
-        $reloadAnnotation = $this->testAnnotationReader->getTestAnnotation($testName, ReloadDatabaseBefore::class);
+        $reloadAnnotation = $this->testAnnotationReader->getTestAnnotation($test, ReloadDatabaseBefore::class);
         if ($reloadAnnotation !== null)
         {
             $this->databaseRefresher->refresh();
@@ -35,7 +35,7 @@ class PHPUnitExtension implements BeforeTestHook, AfterTestHook
 
     public function executeAfterTest(string $test, float $time): void
     {
-        $reloadAnnotation = $this->testAnnotationReader->getTestAnnotation($testName, ReloadDatabaseAfter::class);
+        $reloadAnnotation = $this->testAnnotationReader->getTestAnnotation($test, ReloadDatabaseAfter::class);
         if ($reloadAnnotation !== null)
         {
             $this->databaseRefresher->refresh();
