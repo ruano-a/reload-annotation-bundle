@@ -1,3 +1,6 @@
+# Most likely obsolete for anyone
+https://github.com/ruano-a/selective-test-isolation-bundle uses rollback, which is faster and better.
+
 # ReloadAnnotationBundle
 A Symfony bundle providing a PHPUnit extension reloading the database if an annotation is present on test methods.
 It only works with a PHPUnit which version is >= 7.5 .
